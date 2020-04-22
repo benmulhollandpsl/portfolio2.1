@@ -23,13 +23,14 @@ each with one of these max-widths: 980px, 768px and 640px. */
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   clear: both;
 }
 
 h1 {
   font-family: 'Quantico', sans-serif;
+  text-align: center;
 }
 h2,
 h3,
@@ -47,7 +48,7 @@ h2,
 h3 {
   font-family: 'Quantico', sans-serif;
   font-weight: 700;
-  color:#0081AF;
+  color:rgb(18, 177, 124);
 }
 
 h1 {
@@ -68,7 +69,7 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
@@ -92,6 +93,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 20px;
 }
 
 nav a {
@@ -134,17 +136,36 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+  opacity: .5 .6 .7 .8 .9 1;
+  transition-delay: 500ms;
 }
 
 .main-section {
   float: left;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+  opacity: .5 .6 .7 .8 .9 1;
+  transition-delay: 500ms;
 }
+
+/* button in contact  */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px, 50px, 30px, 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
 
 /* portfolio page */
 
@@ -162,12 +183,13 @@ h3, h2 {
 
 .work img {
   width: 100%;
-  border: 0 none;
+  height: 100%;
+  border: 5 5 white;
   opacity: 0.8;
 }
 
 .work h3 {
-  position: absolute;
+  position: webkit-sticky;
   bottom: 20px;
   width: 100%;
   padding: 15px;
@@ -176,7 +198,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: #2f9e4b;
   border-bottom: 0;
 }
 
@@ -239,24 +261,37 @@ input[type=submit] {
 /* this doesn't do anything I can observe yet, 
 looking at other examples for guidance, trying to make these
  media tags  match the screenshots, how do i match my @media screen tags?*/
-/* @media only screen and (max-width: 980px) {
-  body {
+@media only screen and (max-width: 980px) {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+    background: url("../images/contact.jpg");
   
   }
 
 @media only screen and (max-width: 768px) {
-  body {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+    color: black;
+    background: url("../images/canoemany.jpg");
     
     }
 
 @media only screen and (max-width: 640px) {
-  body {
+  body {font-family: 'Quantico', sans-serif;
+    font-size: 8px;
+    line-height: 16px;
+    color: black;
+    background: url("../images/canoemany.jpg");
+    
       
       }
-}}} */
+}}}
 
 
-/* https://codepen.io/joshuajcollinsworth/pen/ExjZexY  */
+
 
 
 
