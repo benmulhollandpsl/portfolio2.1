@@ -23,6 +23,8 @@ each with one of these max-widths: 980px, 768px and 640px. */
 
 .container {
   width: 100%;
+  content: "";
+  display: table;
   max-width: 1000px;
   margin: 0 auto;
   clear: both;
@@ -119,8 +121,8 @@ footer {
   color: #ffffff;
   color: #cccccc;
   text-align: center;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
+  background: rgb(100, 194, 135);
+  border-top: 8px solid #408606;
   height: 50px;
 }
 
@@ -143,8 +145,8 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 1200px;
-  padding: 30px;
+  max-width: 888px;
+  padding: 88px;
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
@@ -152,19 +154,28 @@ h3, h2 {
   transition-delay: 500ms;
 }
 
-/* button in contact  */
+/* buttons in contact  */
 .button {
-  background-color: #4CAF50;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Quantico', sans-serif;
   border: none;
   border-radius: 15px, 50px, 30px, 5px;
-  color: white;
-  padding: 15px 32px;
+  color: rgb(11, 14, 236);
+  padding: 7px 1px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  
+
+}
+
+
+
+
+
 
 
 /* portfolio page */
@@ -173,7 +184,8 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  background-size: auto;
+  margin: 20px 20px;
   overflow: auto;
 }
 
@@ -182,13 +194,14 @@ h3, h2 {
 }
 
 .work img {
-  width: 100%;
-  height: 100%;
-  border: 5 5 white;
-  opacity: 0.8;
+  float: none;
+  width: 274px;
+  height: 245px;
+  border: 5 5 rgb(255, 255, 255);
+  opacity:.9;
 }
 
-.work h3 {
+.work h3, h4, h5 {
   position: webkit-sticky;
   bottom: 20px;
   width: 100%;
@@ -201,6 +214,13 @@ h3, h2 {
   background: #2f9e4b;
   border-bottom: 0;
 }
+
+
+
+
+
+
+
 
 .auth-image {
   float: left;
@@ -291,7 +311,137 @@ looking at other examples for guidance, trying to make these
 }}}
 
 
+/* JA/\/\in ambience player */
+
+#bg{
+  height:55%;
+  width: 80%;
+  position: absolute;
+  overflow: hidden;
+
+}
+/* bg is the blurry background */
+#bg img{
+  height: 86%;
+  width:86%;
+  -webkit-filter:blur(20px);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+#blackLayer{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(25, 47, 33, .2);
+  position: absolute;
+  z-index:99;
+}
 
 
+#mainAlbum{
+  width:25%;
+  background-color:rgb(255, 255, 255);
+  border-radius: 15px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+/* the notblurry photo on top is mainalbum and image album */
+#imageAlbum img{
+  height: 180px;
+  width: 100%;
+  margin-top: -5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
+}
+
+#player{
+  padding: 25px;
+  color: cyan;
+
+}
+#songTitle{
+  width:200px;
+  text-align: center;
+  /* background-color: rgb(2, 133, 52); */
+  font-family:'Quantico', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+#buttons{
+  height: 72px;
+  width: 100%;
+  margin-top: 50px;
+  position:relative;
+  top:10%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#play, #next, #pre{
+  width:50px;
+  height:50%;
+  border: 0;
+  background-color:rgb(255, 217, 0);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+#next{
+  width:30px;
+  height: 30px;
+  left:75%;
+}
+#pre{
+  width:30px;
+  height: 30px;
+  left:25%;
+}
+
+#play img, #next img, #pre img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+#seek-bar{
+  width:150px;
+  height:9px;
+  background-color: gray;
+  display:flex;
+  border-radius:50px;
+  margin-left:25px;
+  cursor: pointer;
+
+}
+#fill{
+  height: 8px;
+  background-color:cyan;
+  border-radius: 20px;
+
+}
+#handle{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 212, 212);
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
 
