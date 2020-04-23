@@ -324,18 +324,20 @@ looking at other examples for guidance, trying to make these
 #bg img{
   height: 86%;
   width:86%;
-  -webkit-filter:blur(20px);
+  filter:blur(20px); 
+  /* what is the -webkit-filter mean? */
   position: absolute;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
+  float: center
 }
 
 #blackLayer{
-  height: 100%;
-  width: 100%;
-  background-color: rgb(25, 47, 33, .2);
+  height: 75%;
+  width: 75%;
+  background-color: rgb(25, 47, 33, 0);
   position: absolute;
   z-index:99;
 }
@@ -369,7 +371,8 @@ looking at other examples for guidance, trying to make these
 #songTitle{
   width:200px;
   text-align: center;
-  /* background-color: rgb(2, 133, 52); */
+  background-color: rgb(2, 133, 52);
+  border-radius:20%;
   font-family:'Quantico', sans-serif;
   font-size: 18px;
   position: absolute;
