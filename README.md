@@ -12,10 +12,9 @@ liri, my 2nd group project and revised buttons.
 ## notes
 * all content is the creation of myself with the exception of PokeWeatherApp and Pandemic Portal that were group projects.  
 
-* a lot of searching went into finding a nice template, and some inpiration was taken (but not copied) from 
-    * https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-    * and Phantom by HTML5 UP html5up.net
+* a lot of searching went into finding a nice template, then I gave up on trying to use all of those and kept playing with Css.  my next iteration will have an interactive element using js somewhere on the contact page.
 
+* Phone number is not provided.
 
 * all audio are protected under copywright, please ask permission before usage.
 
