@@ -344,7 +344,7 @@ looking at other examples for guidance, trying to make these
 
 
 #mainAlbum{
-  width:25%;
+  width:40%;
   background-color:rgb(255, 255, 255);
   border-radius: 15px;
   position: absolute;
@@ -353,7 +353,7 @@ looking at other examples for guidance, trying to make these
   transform: translate(-50%,-50%);
   z-index: 999;
 }
-/* the notblurry photo on top is mainalbum and image album */
+/* the notblurry photo on top is mainAlbum and imageAlbum */
 #imageAlbum img{
   height: 180px;
   width: 100%;
@@ -371,7 +371,7 @@ looking at other examples for guidance, trying to make these
 #songTitle{
   width:200px;
   text-align: center;
-  background-color: rgb(2, 133, 52);
+  background-color: rgb(2, 133, 52, .6);
   border-radius:20%;
   font-family:'Quantico', sans-serif;
   font-size: 18px;
@@ -408,12 +408,12 @@ looking at other examples for guidance, trying to make these
 #next{
   width:30px;
   height: 30px;
-  left:75%;
+  left:80%;
 }
 #pre{
   width:30px;
   height: 30px;
-  left:25%;
+  left:20%;
 }
 
 #play img, #next img, #pre img{
